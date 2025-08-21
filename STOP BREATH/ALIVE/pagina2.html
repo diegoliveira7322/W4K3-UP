@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D13G00</title>
+  <link rel="icon" href="Chro1.jpg" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --preto-profundo: #0A0A0A;
+      --branco-puro: #FFFFFF;
+    }
+
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      background: url("Chro.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--preto-profundo);
+    }
+
+    /* Navbar reduzida e branca */
+    .navbar {
+      width: 100%;
+      background-color: var(--branco-puro);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar .logo-box {
+      background: var(--branco-puro);
+      padding: 8px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .navbar .logo-box img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    /* Imagem central */
+    .banner {
+      max-width: 700px; /* largura máxima */
+      width: 90%;       /* ocupa até 90% da tela */
+      margin: 40px auto; /* centraliza e dá espaço em cima/baixo */
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      display: block; /* garante que fique no centro */
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--preto-profundo);
+      color: var(--branco-puro);
+      text-align: center;
+      padding: 15px 0;
+      margin-top: auto; /* empurra footer para o fim */
+    }
+
+    .footer .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 8px;
+    }
+
+    .footer .social-links img {
+      width: 100px;
+      height: 100px;
+      transition: transform 0.3s;
+    }
+
+    .footer .social-links img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar branca com logo centralizada -->
+  <div class="navbar">
+    <div class="logo-box">
+      <a href="#"><img src="Chro1.jpg" alt="Logo"></a>
+    </div>
+  </div>
+
+  <!-- Banner central diretamente no body -->
+  <img src="chegando.jpg" alt="Banner Central" class="banner">
+
+  <!-- Footer com ícones sociais -->
+  <footer class="footer" id="contato">
+    <p>© 2025 D13G00 👾</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/diegozx.23/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>
+      <a href="https://github.com/diegoliveira7322" target="_blank">
+        <img src="git.png" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/diego-o-08785b378/" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
